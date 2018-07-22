@@ -1,7 +1,8 @@
-// console.log('webpack')
-import logger from "./log.js";
+import 'react'
+import './estilo.css'
 
-logger.info('usando o padrao common js');
+export default props => (
+    <h1> Olá </h1>
+)
 
-logger.info('teste git');
-
+console.log('funcionou')
