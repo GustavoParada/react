@@ -1,7 +1,16 @@
-// console.log('webpack')
-import logger from "./log.js";
+const produto= {
+    nome: 'Caneta bic preta',
+    preco: 1.90,
+    desconto: 0.05
+}
 
-logger.info('usando o padrao common js');
+function clone(objeto)
+{
+    return {...objeto}
+}
 
-logger.info('teste git');
+const novoProduto = clone(produto)
 
+novoProduto.nome = 'Caneta Bic Azul'
+
+console.log(produto, novoProduto)
